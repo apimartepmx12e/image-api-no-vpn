@@ -12,7 +12,7 @@
 
 > token-billed: `text_input` $4/M, `cached_text_input` $1/M, `image_input` $8/M, `cached_image_input` $2/M — one OpenAI-compatible endpoint at `https://api.apimart.ai/v1`, no monthly plan required. *(observed 2026-10-12)*
 
-**[Get an API key](https://go.apimart.ai/k-af90c4)** · **[Live pricing](https://go.apimart.ai/k-PENDING-gpt-image-1-api-pricing)** · **[Model page](https://go.apimart.ai/k-PENDING-gpt-image-1-api-model)** · [⚡ 60-second quickstart](#quickstart)
+**[Get an API key](https://go.apimart.ai/k-6ece01)** · **[Live pricing](https://go.apimart.ai/k-7d0d97)** · **[Model page](https://go.apimart.ai/k-ce1da6)** · [⚡ 60-second quickstart](#quickstart)
 
 **Why teams call GPT Image 1 (`gpt-image-1`) through APIMart**
 
@@ -29,7 +29,7 @@ GPT Image 1 is OpenAI's image generation model served on APIMart with token-base
 
 | Route | `model` value | Billing | Notes |
 | --- | --- | --- | --- |
-| Per-image | `gpt-image-1` | per delivered image, by resolution | see the [model page](https://go.apimart.ai/k-PENDING-gpt-image-1-api-model) for the exact tiers |
+| Per-image | `gpt-image-1` | per delivered image, by resolution | see the [model page](https://go.apimart.ai/k-ce1da6) for the exact tiers |
 
 Endpoint: `POST https://api.apimart.ai/v1/images/generations` (OpenAI-compatible), then poll `GET /v1/tasks/{task_id}`.
 
@@ -43,7 +43,7 @@ Endpoint: `POST https://api.apimart.ai/v1/images/generations` (OpenAI-compatible
 Token rates (effective): `text_input` $4/M, `cached_text_input` $1/M, `image_input` $8/M, `cached_image_input` $2/M, `image_output` $32/M.
 <!-- pricing:model:end -->
 
-Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-PENDING-gpt-image-1-api-pricing) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
+Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-7d0d97) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
 
 ## Request parameters
 
@@ -57,7 +57,7 @@ Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-PENDING-gpt-im
 | `image_urls` | string[] | — | reference images as public HTTP(S) URLs or base64 data URLs |
 | `nsfw_check` | boolean | `false` | runs `omni-moderation-latest` before submitting |
 
-The table lists the fields accepted by the APIMart OpenAI-compatible image endpoint. Check the [model page](https://go.apimart.ai/k-PENDING-gpt-image-1-api-model) for anything this model adds on top.
+The table lists the fields accepted by the APIMart OpenAI-compatible image endpoint. Check the [model page](https://go.apimart.ai/k-ce1da6) for anything this model adds on top.
 
 ## Quickstart
 
@@ -100,15 +100,15 @@ token-billed: `text_input` $4/M, `cached_text_input` $1/M, `image_input` $8/M, `
 
 **How do I get a key?**
 
-Use the [Get an API key](https://go.apimart.ai/k-af90c4) link — $1 minimum top-up, no plan required.
+Use the [Get an API key](https://go.apimart.ai/k-6ece01) link — $1 minimum top-up, no plan required.
 
 ## Attributed links (how this repository is measured)
 
 | Purpose | Attributed link | Target |
 | --- | --- | --- |
-| Model page | <https://go.apimart.ai/k-PENDING-gpt-image-1-api-model> | `apimart.ai/model/gpt-image-1` |
-| Live pricing | <https://go.apimart.ai/k-PENDING-gpt-image-1-api-pricing> | `apimart.ai/pricing` |
-| Get an API key | <https://go.apimart.ai/k-af90c4> | `apimart.ai/keys` |
+| Model page | <https://go.apimart.ai/k-ce1da6> | `apimart.ai/model/gpt-image-1` |
+| Live pricing | <https://go.apimart.ai/k-7d0d97> | `apimart.ai/pricing` |
+| Get an API key | <https://go.apimart.ai/k-6ece01> | `apimart.ai/keys` |
 
 Outbound APIMart links are minted through the promo link API; hand-made tracking parameters are rejected by
 `tools/check_links.py` in CI.
